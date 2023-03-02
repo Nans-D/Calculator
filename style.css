@@ -1,0 +1,75 @@
+*{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    background-color: lightblue;
+}
+
+/* .calculator-bg{
+background-color: grey;
+margin: 15vh;
+border-radius: 20%;
+} */
+
+.calculator-grid{
+    padding: 0;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-gap:1vh ;
+    min-height: 100vh;
+    grid-template-columns: repeat(4,100px);
+    grid-template-rows: minmax(120px, auto)repeat(5,100px);
+}
+
+button {
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 2rem;
+    border: 2px solid #3B4455;
+    box-shadow: -5px -5px 10px #47505F; 
+    box-shadow: 5px 5px 10px #343C49; 
+    outline: none;
+    background-color: #3B4455;
+    color: lightgray;
+}
+
+button:hover{
+    background-color: aliceblue;
+}
+
+.span-two{
+grid-column: span 2;
+}
+
+test{
+    color: #343C49;
+}
+
+.display{
+    box-shadow: -5px -5px 10px #47505F; 
+    grid-column: 1 / -1;
+    background-color: #3B4455;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    flex-direction: column;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.previous-operator{
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.current-operator{
+    font-size: 70px;
+}
+
+.color-btn{
+    color: aquamarine;
+}
